@@ -16,6 +16,7 @@ public class UserFeatureController {
 
 	private final EmailFeatureService emailFeatureServie;
 	private String testOne;
+	private String abc;
 
 	public UserFeatureController(EmailFeatureService userFeatureServie) {
 		this.emailFeatureServie = userFeatureServie;
