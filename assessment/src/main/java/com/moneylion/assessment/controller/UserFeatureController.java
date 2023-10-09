@@ -23,6 +23,7 @@ public class UserFeatureController {
 	@GetMapping("/feature")
 	public EmailFeatureResponseDto  checkUserFeature(@RequestParam("email") String email , @RequestParam("featureName") String featureName) {
 		System.out.println("Hello this is just to test.");
+		System.out.println("Hello this is just to test.");
 		return emailFeatureServie.checkEmailFeatures(email, featureName);
 	}
 
