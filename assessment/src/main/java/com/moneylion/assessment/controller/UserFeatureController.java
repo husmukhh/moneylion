@@ -29,7 +29,7 @@ public class UserFeatureController {
 	}
 
 	@GetMapping("/feature1")
-	public EmailFeatureResponseDto  checkUserFeature1(@RequestParam("email") String email , @RequestParam("featureName") String featureName) {
+	public EmailFeatureResponseDto  testjenkinmethond(@RequestParam("email") String email , @RequestParam("featureName") String featureName) {
 
 		return emailFeatureServie.checkEmailFeatures(email, featureName);
 	}
