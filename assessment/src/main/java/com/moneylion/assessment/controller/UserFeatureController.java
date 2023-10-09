@@ -15,7 +15,10 @@ import com.moneylion.assessment.service.EmailFeatureService;
 public class UserFeatureController {
 
 	private final EmailFeatureService emailFeatureServie;
-	private String test;
+	private String testOne;
+
+
+	private String test2;
 	
 	public UserFeatureController(EmailFeatureService userFeatureServie) {
 		this.emailFeatureServie = userFeatureServie;
