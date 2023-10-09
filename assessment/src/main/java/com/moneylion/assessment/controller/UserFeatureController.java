@@ -15,9 +15,6 @@ import com.moneylion.assessment.service.EmailFeatureService;
 public class UserFeatureController {
 
 	private final EmailFeatureService emailFeatureServie;
-	private String testOne;
-	private String abc;
-	private String jenkinbuild;
 
 	public UserFeatureController(EmailFeatureService userFeatureServie) {
 		this.emailFeatureServie = userFeatureServie;
@@ -29,11 +26,6 @@ public class UserFeatureController {
 		return emailFeatureServie.checkEmailFeatures(email, featureName);
 	}
 
-	@GetMapping("/feature1")
-	public EmailFeatureResponseDto  testjenkinmethond(@RequestParam("email") String email , @RequestParam("featureName") String featureName) {
-
-		return emailFeatureServie.checkEmailFeatures(email, featureName);
-	}
 	@PostMapping("/feature")
 	public ResponseEntity<?>  addUpdateFeature(@RequestBody final EmailFeatureRequestDto emailFeatureReq) {
 		return emailFeatureServie.addUpdateEmailFeature(emailFeatureReq);
