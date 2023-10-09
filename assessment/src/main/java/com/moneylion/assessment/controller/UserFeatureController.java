@@ -26,8 +26,13 @@ public class UserFeatureController {
 	public EmailFeatureResponseDto  checkUserFeature(@RequestParam("email") String email , @RequestParam("featureName") String featureName) {
 		
 		return emailFeatureServie.checkEmailFeatures(email, featureName);
-	} 
-	
+	}
+
+	@GetMapping("/feature1")
+	public EmailFeatureResponseDto  checkUserFeature1(@RequestParam("email") String email , @RequestParam("featureName") String featureName) {
+
+		return emailFeatureServie.checkEmailFeatures(email, featureName);
+	}
 	@PostMapping("/feature")
 	public ResponseEntity<?>  addUpdateFeature(@RequestBody final EmailFeatureRequestDto emailFeatureReq) {
 		return emailFeatureServie.addUpdateEmailFeature(emailFeatureReq);
